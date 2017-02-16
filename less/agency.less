@@ -112,11 +112,13 @@ h1, h2, h3, h4, h5, h6 {
             a {
                 .heading-font;
                 font-weight: 400;
+                font-size: 18px;
                 letter-spacing: 1px;
-                color: white;
+                color: @theme-primary;
+                // text-shadow: -1px 0 @theme-primary,0 1px @theme-primary,1px 0 @theme-primary,0 -1px @theme-primary;
                 &:hover,
                 &:focus {
-                    color: @theme-primary;
+                    color: white;
                     outline: none;
                 }
             }
