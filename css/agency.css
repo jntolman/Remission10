@@ -186,7 +186,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: white;
+  color: #CB2027;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
@@ -557,9 +557,6 @@ aside.clients img {
 }
 section#contact {
   background-color: #8f9093;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 section#contact .section-heading {
   color: white;
