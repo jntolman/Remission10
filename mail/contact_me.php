@@ -27,7 +27,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 // SendGrid
 $from = new SendGrid\Email("Remission10.com", "noreply@remission10.com");
 $subject = "New Contact from Remission10.com";
-$to = new SendGrid\Email(null, "jarrett.tolman@gmail.com");
+$to = new SendGrid\Email(null, "scott.peterson@tsmgi.com");
 $content = new SendGrid\Content("text/plain", "Contact form submission details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
