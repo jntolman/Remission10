@@ -25,10 +25,10 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 // mail($to,$email_subject,$email_body,$headers);
 
 // SendGrid
-$from = new SendGrid\Email(null, "noreply@remission10.com");
+$from = new SendGrid\Email("Remission10.com", "noreply@remission10.com");
 $subject = "New Contact from Remission10.com";
 $to = new SendGrid\Email(null, "jarrett.tolman@gmail.com");
-$content = new SendGrid\Content("text/plain", "Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message");
+$content = new SendGrid\Content("text/plain", "Contact form submission details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');
