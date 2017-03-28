@@ -155,6 +155,12 @@ fieldset[disabled] .btn-xl.active {
   color: #CB2027;
   background-color: white;
 }
+#event {
+  padding-top: 100px;
+}
+#event-flyer {
+  margin: 0 auto;
+}
 .navbar-custom {
   background-color: #8f9093;
   border-color: transparent;
@@ -306,7 +312,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .service-heading {
