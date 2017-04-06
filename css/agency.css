@@ -14,7 +14,7 @@ body {
   color: #CB2027;
 }
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.75;
 }
 p.large {
@@ -63,6 +63,65 @@ h6 {
 }
 .bg-darkest-gray {
   background-color: #8f9093;
+}
+#partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+#details {
+  font-size: 16px;
+  background-color: white;
+}
+.rules {
+  font-size: 14px;
+}
+#rules {
+  padding-top: 10px;
+}
+#contact {
+  padding-top: 50px;
+}
+.shadow {
+  box-shadow: 2px 2px 2px 1px #8f9093;
+}
+.shadow-mustang {
+  box-shadow: 2px 2px 2px 1px #888;
+  margin-top: 20px;
+}
+.mustang-btn {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 18px;
+  color: white;
+  padding: 12px;
+}
+.mustang-btn:hover {
+  background-color: transparent;
+}
+.mustang:hover {
+  opacity: 0.75;
+}
+#mustang-video {
+  padding-top: 140px;
+}
+#video {
+  padding-top: 140px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 100px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
 }
 .btn-primary {
   color: white;
@@ -214,7 +273,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #9f191f;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
@@ -233,7 +292,44 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 992px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
   .navbar-custom.affix {
     background-color: #8f9093;
     padding: 10px 0;
@@ -242,11 +338,27 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+#spotlight {
+  background-image: url('../img/spotlight.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  min-height: 500px;
+  padding: 30px 40px 0px;
+  margin-top: 50px;
+}
+#hashtag {
+  padding-top: 30px;
+}
+#buttons-row {
+  margin-top: 50px;
+}
 header {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  background-color: #8f9093;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -255,7 +367,7 @@ header {
   color: #ffffff;
 }
 header .intro-text {
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
@@ -273,10 +385,15 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  #spotlight {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
   header .intro-text {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 160px;
+    padding-bottom: 100px;
   }
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -291,7 +408,8 @@ header .intro-text .intro-heading {
     font-weight: 700;
     font-size: 75px;
     line-height: 75px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    margin-bottom: 30px;
   }
 }
 section {
@@ -310,7 +428,7 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section {
     padding: 100px 0;
   }
@@ -379,7 +497,7 @@ section h3.section-subheading {
 #portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -480,77 +598,6 @@ section h3.section-subheading {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
-@media (min-width: 768px) {
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline > li {
-    margin-bottom: 100px;
-    min-height: 100px;
-  }
-  .timeline > li .timeline-panel {
-    width: 41%;
-    float: left;
-    padding: 0 20px 20px 30px;
-    text-align: right;
-  }
-  .timeline > li .timeline-image {
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    margin-left: -50px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    margin-top: 16px;
-    line-height: 18px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    text-align: left;
-    padding: 0 30px 20px 20px;
-  }
-}
-@media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
-  }
-  .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    margin-top: 30px;
-    line-height: 26px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .timeline > li {
-    min-height: 170px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
-  }
-  .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
-  }
-  .timeline > li .timeline-image h4 {
-    margin-top: 40px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
-  }
-}
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -566,6 +613,9 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
+}
+aside.clients {
+  background-color: white;
 }
 aside.clients img {
   margin: 50px auto;
