@@ -77,7 +77,7 @@
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder=<?php echo("$firstname") ?> id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
