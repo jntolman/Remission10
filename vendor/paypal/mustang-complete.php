@@ -61,7 +61,7 @@
                 $stmt->bind_param("ssssi", $name, $email, $phone, $txId, $amount);
 
                 if ($stmt->execute() === TRUE) {
-                    echo("Success, Thank you!");
+                    echo("Confirmed, thank you!");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
                     echo($connErr);
