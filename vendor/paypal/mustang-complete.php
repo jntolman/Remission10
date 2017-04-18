@@ -56,7 +56,7 @@
 
             if ($stmt = $conn->prepare("INSERT INTO tickets (name, email, phone, txId) VALUES (?,?,?,?)")) {
 
-                $stmt->bind_param("ssssi", $name, $email, $phone, $txId);
+                $stmt->bind_param("ssss", $name, $email, $phone, $txId);
 
                 if ($stmt->execute() === TRUE) {
                     echo("<p>Confirmed, thank you!</p>");
