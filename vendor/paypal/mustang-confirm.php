@@ -52,7 +52,7 @@
                                         firstName = name.split(' ').slice(0, -1).join(' ');
                                     }
                                     $.ajax({
-                                        url: "mustang-complete.php",
+                                        url: "./mustang-complete.php",
                                         type: "POST",
                                         data: {
                                             name: name,
