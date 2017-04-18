@@ -66,12 +66,12 @@
             <div class="col-lg-12 text-center">
 
                 <?php
-                    $pp_hostname = "www.sandbox.paypal.com"; // Change to www.sandbox.paypal.com to test against sandbox
+                    $pp_hostname = "www.paypal.com"; // Change to www.sandbox.paypal.com to test against sandbox
                     // read the post from PayPal system and add 'cmd'
                     $req = 'cmd=_notify-synch';
                     
                     $tx_token = $_GET['tx'];
-                    $auth_token = "RzAo3mz7e4fRcNnbaCWYakD_SmijKMIQIgopYB1FNViQOlTziQchyBaRZ-G";
+                    $auth_token = "2GpAzqP7yg0XNyctYiScxDRBAD2LuoTBcO2nbOQFKW1miC-qU6rxrPuTKj8";
                     $req .= "&tx=$tx_token&at=$auth_token";
                     
                     $ch = curl_init();
