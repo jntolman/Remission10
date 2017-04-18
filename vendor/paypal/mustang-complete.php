@@ -61,17 +61,17 @@
 
                 if ($stmt->execute() === TRUE) {
                     $conn->close();
-                    return TRUE;
+                    echo("success");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
                     $conn->close();
-                    return FALSE;
+                    echo("failure");
                 }
 
             }
 
             $conn->close();
-            return FALSE;
+            echo("failure");
         }
 
     }
