@@ -35,7 +35,7 @@
         }
 
         if ($nameErr || $emailErr || $phoneErr) {
-            return FALSE;
+            echo("empty");
         } else {
 
             $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
