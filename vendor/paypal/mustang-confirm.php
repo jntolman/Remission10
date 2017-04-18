@@ -18,6 +18,8 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
+                            <input type="hidden" name="transId" value=<?php echo("$tx_token") ?>  >
+                            <input type="hidden" name="amount" value=<?php echo("$amount") ?>  >
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
