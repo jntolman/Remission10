@@ -124,6 +124,7 @@
                         // echo ("<li>Name: $fullname</li>\n");
                         // echo ("<li>Email: $useremail</li>\n");
                         // echo ("<li>Item: $itemname</li>\n");
+                        echo ("<li>Phone: $phone</li>\n");
                         // echo ("<li>Transaction ID: $tx_token</li>\n");
                         // echo ("<li>Amount: $amount</li>\n");
                         // echo ("");

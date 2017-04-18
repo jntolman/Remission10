@@ -9,12 +9,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email *</label>
-                                    <input type="email" class="form-control" value=<?php echo("$useremail") ?> id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" value=<?php echo("'$useremail'") ?> id="email" name="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone *</label>
-                                    <input type="tel" class="form-control" value=<?php echo("$phone") ?> id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" value=<?php echo("'$phone'") ?> id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
