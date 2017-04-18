@@ -112,7 +112,8 @@
                         echo ("<div class=\"row\">
                                     <div class=\"col-lg-12 text-center\">
                                         <h3>Thank you for your support!</h3>
-                                        <p>Please confirm your contact information. Drawing will be held May 31, 2017 and winner will be announced June 3, 2017.</p>
+                                        <p>Your transaction has been completed, and a receipt for your purchase has been emailed to you.<br> You may log into your account at <a href='https://www.paypal.com'>www.paypal.com</a> to view details of this transaction.</p>
+                                        <h4>Please confirm your contact information. Drawing will be held May 31, 2017 and winner will be announced June 3, 2017.</h4>
                                     </div>
                                 </div>");
                         
@@ -122,7 +123,7 @@
                         // echo ("<li>Item: $itemname</li>\n");
                         // echo ("<li>Transaction ID: $tx_token</li>\n");
                         // echo ("<li>Amount: $amount</li>\n");
-                        echo ("Your transaction has been completed, and a receipt for your purchase has been emailed to you.<br> You may log into your account at <a href='https://www.paypal.com'>www.paypal.com</a> to view details of this transaction.<br>");
+                        echo ("");
                         include("vendor/paypal/mustang-confirm.php");
                         }
                         else if (strcmp ($lines[0], "FAIL") == 0) {
