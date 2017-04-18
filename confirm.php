@@ -119,8 +119,8 @@
                                 </div>");
                         
                         // echo ("<b>Payment Details</b><br>\n");
-                        echo ("<li>Name: $firstname $lastname</li>\n");
-                        echo ("<li>Name: $fullname</li>\n");
+                        // echo ("<li>Name: $firstname $lastname</li>\n");
+                        // echo ("<li>Name: $fullname</li>\n");
                         // echo ("<li>Email: $useremail</li>\n");
                         // echo ("<li>Item: $itemname</li>\n");
                         // echo ("<li>Transaction ID: $tx_token</li>\n");

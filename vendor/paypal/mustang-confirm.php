@@ -4,12 +4,12 @@
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" placeholder=<?php echo("$fullname") ?> id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" value=<?php echo("$fullname") ?> id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email *</label>
-                                    <input type="email" class="form-control" placeholder=<?php echo("$useremail") ?> id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" value=<?php echo("$useremail") ?> id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
