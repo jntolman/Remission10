@@ -49,15 +49,16 @@
             $conn = new mysqli($server, $username, $password, $db);
 
             // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
+            if (mysqli_connect_errno()) {
+                printf("Connect failed: %s\n", mysqli_connect_error());
+                exit();
             } 
 
-            $values = array($name, $email, $phone, $txId, $amount);
+            // $values = array($name, $email, $phone, $txId, $amount);
 
             if ($stmt = $conn->prepare("INSERT INTO tickets (name, email, phone, txId, amount) VALUES (?,?,?,?,?)")) {
 
-                $stmt->bind_param("ssssi", $values);
+                $stmt->bind_param("ssssi", $name, $email, $phone, $txId, $amount);
 
                 if ($stmt->execute() === TRUE) {
                     echo("success");
