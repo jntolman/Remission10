@@ -28,14 +28,8 @@
             }
         }
 
-        if (empty($_POST["phone"])) {
-            $phoneErr = "Phone is required";
-        } else {
-            $phone = test_input($_POST["phone"]);
-        }
-
-        if ($nameErr || $emailErr || $phoneErr) {
-            echo("empty");
+        if ($nameErr || $emailErr) {
+            echo("<p>Please email <a href='mailto:scott.peterson@tsmgi.com'>mailto:scott.peterson@tsmgi.com</a> to confirm.</p>");
         } else {
 
             $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -62,7 +56,7 @@
                     echo("<p>Confirmed, thank you!</p>");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
-                    echo($connErr);
+                    echo("<p>Please email <a href='mailto:scott.peterson@tsmgi.com'>mailto:scott.peterson@tsmgi.com</a> to confirm.</p>");
                 }
 
             }
