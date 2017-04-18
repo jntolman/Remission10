@@ -61,7 +61,9 @@
                 $stmt->bind_param("ssssi", $name, $email, $phone, $txId, $amount);
 
                 if ($stmt->execute() === TRUE) {
-                    echo("success");
+                    echo("Success! redirecting to remission10.com...");
+                    sleep(3);
+                    header("Location : https://remission10.herokuapp.com");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
                     echo($connErr);
