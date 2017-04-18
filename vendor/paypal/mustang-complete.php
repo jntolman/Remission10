@@ -29,7 +29,7 @@
         }
 
         if ($nameErr || $emailErr) {
-            echo("<p>Please email <a href='mailto:scott.peterson@tsmgi.com'>mailto:scott.peterson@tsmgi.com</a> to confirm.</p>");
+            echo("<p>There was an error with your submission; please email <a href='mailto:scott.peterson@tsmgi.com'>scott.peterson@tsmgi.com</a> to confirm.</p>");
         } else {
 
             $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -56,7 +56,7 @@
                     echo("<p>Confirmed, thank you!</p>");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
-                    echo("<p>Please email <a href='mailto:scott.peterson@tsmgi.com'>mailto:scott.peterson@tsmgi.com</a> to confirm.</p>");
+                    echo("<p>There was an error with your submission; please email <a href='mailto:scott.peterson@tsmgi.com'>scott.peterson@tsmgi.com</a> to confirm.</p>");
                 }
 
             }
