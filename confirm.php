@@ -108,7 +108,6 @@
                         $fullname = $firstname . " " . $lastname;
                         // $phone = $keyarray['contact_phone'];
                         $itemname = $keyarray['item_name'];
-                        $amount = $keyarray['mc_gross'];
                         $useremail = $keyarray['payer_email'];
                         
                         echo ("<div class=\"row\">

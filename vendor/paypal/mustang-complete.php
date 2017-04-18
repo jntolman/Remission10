@@ -52,16 +52,14 @@
             if (mysqli_connect_errno()) {
                 printf("Connect failed: %s\n", mysqli_connect_error());
                 exit();
-            } 
+            }
 
-            // $values = array($name, $email, $phone, $txId, $amount);
+            if ($stmt = $conn->prepare("INSERT INTO tickets (name, email, phone, txId) VALUES (?,?,?,?)")) {
 
-            if ($stmt = $conn->prepare("INSERT INTO tickets (name, email, phone, txId, amount) VALUES (?,?,?,?,?)")) {
-
-                $stmt->bind_param("ssssi", $name, $email, $phone, $txId, $amount);
+                $stmt->bind_param("ssssi", $name, $email, $phone, $txId);
 
                 if ($stmt->execute() === TRUE) {
-                    echo("Confirmed, thank you!");
+                    echo("<p>Confirmed, thank you!</p>");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
                     echo($connErr);
