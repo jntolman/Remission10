@@ -40,14 +40,16 @@
         $lastname = $keyarray['last_name'];
         $itemname = $keyarray['item_name'];
         $amount = $keyarray['payment_gross'];
+        $useremail = $keyarray['payer_email'];
         
         echo ("<p><h3>Thank you for your purchase!</h3></p>");
         
         echo ("<b>Payment Details</b><br>\n");
         echo ("<li>Name: $firstname $lastname</li>\n");
+        echo ("<li>Email: $useremail</li>\n");
         echo ("<li>Item: $itemname</li>\n");
         echo ("<li>Amount: $amount</li>\n");
-        echo ("");
+        echo ("Your transaction has been completed, and a receipt for your purchase has been emailed to you.<br> You may log into your account at <a href='https://www.paypal.com'>www.paypal.com</a> to view details of this transaction.<br>");
         }
         // include("/vendor/paypal/mustang-confirm.php");
         else if (strcmp ($lines[0], "FAIL") == 0) {
@@ -58,4 +60,4 @@
 ?>
 
  
-Your transaction has been completed, and a receipt for your purchase has been emailed to you.<br> You may log into your account at <a href='https://www.paypal.com'>www.paypal.com</a> to view details of this transaction.<br>
+
