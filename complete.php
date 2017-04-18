@@ -55,23 +55,20 @@
 
             $values = array($name, $email, $phone, $txId, $amount);
 
-            if ($stmt = $conn->prepare("INSERT INTO Tickets (name, email, phone, txId, amount) VALUES (?,?,?,?,?)")) {
+            if ($stmt = $conn->prepare("INSERT INTO tickets (name, email, phone, txId, amount) VALUES (?,?,?,?,?)")) {
 
                 $stmt->bind_param("ssssi", $values);
 
                 if ($stmt->execute() === TRUE) {
-                    $conn->close();
                     echo("success");
                 } else {
                     $connErr = "Error: " . $sql . "<br>" . $conn->error;
-                    $conn->close();
-                    echo("failure");
+                    echo($connErr);
                 }
 
             }
 
             $conn->close();
-            echo("failure");
         }
 
     }
