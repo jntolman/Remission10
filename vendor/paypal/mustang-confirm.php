@@ -14,12 +14,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone *</label>
-                                    <input type="tel" class="form-control" value=<?php echo("'$phone'") ?> id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="000-000-0000" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <input type="hidden" name="txId" value=<?php echo("$tx_token") ?>  >
-                            <input type="hidden" name="amount" value=<?php echo("$amount") ?>  >
+                            <input type="hidden" name="txId" value=<?php echo("'$tx_token'") ?>  >
+                            <input type="hidden" name="amount" value=<?php echo("'$amount'") ?>  >
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>

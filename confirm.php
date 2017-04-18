@@ -106,7 +106,7 @@
                         $firstname = $keyarray['first_name'];
                         $lastname = $keyarray['last_name'];
                         $fullname = $firstname . " " . $lastname;
-                        $phone = $keyarray['contact_phone'];
+                        // $phone = $keyarray['contact_phone'];
                         $itemname = $keyarray['item_name'];
                         $amount = $keyarray['payment_gross'];
                         $useremail = $keyarray['payer_email'];
@@ -124,7 +124,7 @@
                         // echo ("<li>Name: $fullname</li>\n");
                         // echo ("<li>Email: $useremail</li>\n");
                         // echo ("<li>Item: $itemname</li>\n");
-                        echo ("<li>Phone: $phone</li>\n");
+                        // echo ("<li>Phone: $phone</li>\n");
                         // echo ("<li>Transaction ID: $tx_token</li>\n");
                         // echo ("<li>Amount: $amount</li>\n");
                         // echo ("");
