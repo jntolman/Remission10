@@ -14,7 +14,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone *</label>
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" value=<?php echo("$phone") ?> id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>

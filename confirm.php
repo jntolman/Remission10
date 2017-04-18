@@ -106,6 +106,7 @@
                         $firstname = $keyarray['first_name'];
                         $lastname = $keyarray['last_name'];
                         $fullname = $firstname . " " . $lastname;
+                        $phone = $keyarray['contact_phone'];
                         $itemname = $keyarray['item_name'];
                         $amount = $keyarray['payment_gross'];
                         $useremail = $keyarray['payer_email'];
