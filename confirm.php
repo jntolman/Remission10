@@ -105,6 +105,7 @@
                         // process payment
                         $firstname = $keyarray['first_name'];
                         $lastname = $keyarray['last_name'];
+                        $fullname = $firstname . " " . $lastname;
                         $itemname = $keyarray['item_name'];
                         $amount = $keyarray['payment_gross'];
                         $useremail = $keyarray['payer_email'];
@@ -117,13 +118,13 @@
                                     </div>
                                 </div>");
                         
-                        echo ("<b>Payment Details</b><br>\n");
-                        echo ("<li>Name: $firstname $lastname</li>\n");
-                        echo ("<li>Email: $useremail</li>\n");
-                        echo ("<li>Item: $itemname</li>\n");
-                        echo ("<li>Transaction ID: $tx_token</li>\n");
-                        echo ("<li>Amount: $amount</li>\n");
-                        echo ("");
+                        // echo ("<b>Payment Details</b><br>\n");
+                        // echo ("<li>Name: $firstname $lastname</li>\n");
+                        // echo ("<li>Email: $useremail</li>\n");
+                        // echo ("<li>Item: $itemname</li>\n");
+                        // echo ("<li>Transaction ID: $tx_token</li>\n");
+                        // echo ("<li>Amount: $amount</li>\n");
+                        // echo ("");
                         include("vendor/paypal/mustang-confirm.php");
                         }
                         else if (strcmp ($lines[0], "FAIL") == 0) {

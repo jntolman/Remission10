@@ -4,7 +4,7 @@
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" placeholder=<?php echo("$firstname $lastname") ?> id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder=<?php echo("$fullname") ?> id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -18,7 +18,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <input type="hidden" name="transId" value=<?php echo("$tx_token") ?>  >
+                            <input type="hidden" name="txId" value=<?php echo("$tx_token") ?>  >
                             <input type="hidden" name="amount" value=<?php echo("$amount") ?>  >
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
