@@ -4,6 +4,7 @@
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
+                                    <?php echo("$fullname") ?>
                                     <input type="text" class="form-control" value=<?php echo("$fullname") ?> id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
