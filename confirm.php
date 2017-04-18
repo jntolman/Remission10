@@ -109,14 +109,19 @@
                         $amount = $keyarray['payment_gross'];
                         $useremail = $keyarray['payer_email'];
                         
-                        echo ("<p><h3>Thank you for your purchase!</h3></p>");
+                        echo ("<div class=\"row\">
+                                    <div class=\"col-lg-12 text-center\">
+                                        <h3>Thank you for your support!</h3>
+                                        <p>Please confirm your contact information. Drawing will be held May 31, 2017 and winner will be announced June 3, 2017.</p>
+                                    </div>
+                                </div>");
                         
-                        echo ("<b>Payment Details</b><br>\n");
-                        echo ("<li>Name: $firstname $lastname</li>\n");
-                        echo ("<li>Email: $useremail</li>\n");
-                        echo ("<li>Item: $itemname</li>\n");
-                        echo ("<li>Transaction ID: $tx_token</li>\n");
-                        echo ("<li>Amount: $amount</li>\n");
+                        // echo ("<b>Payment Details</b><br>\n");
+                        // echo ("<li>Name: $firstname $lastname</li>\n");
+                        // echo ("<li>Email: $useremail</li>\n");
+                        // echo ("<li>Item: $itemname</li>\n");
+                        // echo ("<li>Transaction ID: $tx_token</li>\n");
+                        // echo ("<li>Amount: $amount</li>\n");
                         echo ("Your transaction has been completed, and a receipt for your purchase has been emailed to you.<br> You may log into your account at <a href='https://www.paypal.com'>www.paypal.com</a> to view details of this transaction.<br>");
                         include("vendor/paypal/mustang-confirm.php");
                         }
