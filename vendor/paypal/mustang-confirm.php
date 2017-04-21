@@ -1,5 +1,5 @@
 
-                    <form name="contactConfirm" id="confirmForm" action="complete.php" method="POST" novalidate>
+                    <form name="contactConfirm" id="confirmForm" action="complete.php" method="POST" validate>
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="form-group">
