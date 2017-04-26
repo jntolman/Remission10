@@ -71,7 +71,7 @@
                     $req = 'cmd=_notify-synch';
                     
                     $tx_token = $_GET['tx'];
-                    $auth_token = "2GpAzqP7yg0XNyctYiScxDRBAD2LuoTBcO2nbOQFKW1miC-qU6rxrPuTKj8";
+                    $auth_token = getenv("PAYPAL_AUTH_TOKEN");
                     $req .= "&tx=$tx_token&at=$auth_token";
                     
                     $ch = curl_init();
